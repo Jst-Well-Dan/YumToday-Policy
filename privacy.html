@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       background-color: #FFF8E8;
@@ -17,6 +19,7 @@
       line-height: 1.8;
       padding: 20px;
     }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -25,24 +28,28 @@
       padding: 32px;
       box-shadow: 0 4px 12px rgba(124, 92, 63, 0.1);
     }
+
     h1 {
       color: #6EAA7D;
       font-size: 28px;
       margin-bottom: 8px;
       text-align: center;
     }
+
     .app-name {
       text-align: center;
       font-size: 16px;
       color: #A7D8DE;
       margin-bottom: 24px;
     }
+
     .update-date {
       text-align: center;
       font-size: 14px;
       color: #999;
       margin-bottom: 32px;
     }
+
     h2 {
       color: #6EAA7D;
       font-size: 20px;
@@ -51,27 +58,33 @@
       padding-left: 12px;
       border-left: 4px solid #6EAA7D;
     }
+
     h3 {
       font-size: 16px;
       margin-top: 20px;
       margin-bottom: 8px;
     }
+
     p {
       margin-bottom: 12px;
     }
+
     ul {
       margin-left: 24px;
       margin-bottom: 12px;
     }
+
     li {
       margin-bottom: 8px;
     }
+
     .highlight {
       background-color: rgba(110, 170, 125, 0.1);
       padding: 16px;
       border-radius: 8px;
       margin: 16px 0;
     }
+
     .contact-box {
       background-color: rgba(167, 216, 222, 0.2);
       padding: 20px;
@@ -79,13 +92,16 @@
       margin-top: 24px;
       text-align: center;
     }
+
     .contact-box a {
       color: #6EAA7D;
       text-decoration: none;
     }
+
     .contact-box a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
       margin-top: 32px;
@@ -96,21 +112,22 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>隐私政策</h1>
     <p class="app-name">今天岛上吃什么 (YumToday)</p>
-    <p class="update-date">最后更新日期：2025年12月18日</p>
+    <p class="update-date">最后更新日期：2025年12月24日</p>
 
-    <p>北京知微探界科技有限公司（以下简称"我们"）非常重视您的隐私。本隐私政策说明了我们如何收集、使用、存储和保护您在使用"今天岛上吃什么"应用（以下简称"本应用"）时提供的个人信息。</p>
+    <p>北京知微探界科技（以下简称"我们"）非常重视您的隐私。本隐私政策说明了我们如何收集、使用、存储和保护您在使用"今天岛上吃什么"应用（以下简称"本应用"）时提供的个人信息。</p>
 
     <h2>一、我们收集的信息</h2>
 
     <h3>1.1 您主动提供的信息</h3>
     <ul>
-      <li><strong>手机号码</strong>：用于账户注册和登录验证</li>
-      <li><strong>食物照片</strong>：您拍摄或上传的食物图片，用于 AI 识别菜品</li>
-      <li><strong>食物数据</strong>：您添加的菜谱、冰箱库存、饮食记录等</li>
+      <li><strong>手机号码</strong>：用于账户注册和登录身份验证</li>
+      <li><strong>食物照片</strong>：您拍摄或上传的食物图片，用于 AI 识别菜品。<strong>照片仅存储在您的设备本地</strong>，不会上传到我们的服务器</li>
+      <li><strong>食物数据</strong>：您添加的菜谱名称、标签、冰箱库存、饮食记录等文字信息。<strong>这些信息默认仅存储在您的设备本地</strong></li>
     </ul>
 
     <h3>1.2 自动收集的信息</h3>
@@ -125,7 +142,7 @@
       <ul>
         <li>提供账户注册和身份验证服务</li>
         <li>通过 AI 识别您上传的食物照片</li>
-        <li>存储和同步您的菜谱、冰箱库存和饮食记录</li>
+        <li>在您的设备本地存储您的菜谱、冰箱库存和饮食记录</li>
         <li>为您推荐菜品和提供个性化服务</li>
         <li>改进应用功能和用户体验</li>
       </ul>
@@ -134,18 +151,20 @@
     <h2>三、第三方服务</h2>
     <p>为提供更好的服务，本应用使用以下第三方服务：</p>
     <ul>
-      <li><strong>Supabase</strong>：提供数据存储、用户认证和图片存储服务（服务器位于新加坡）</li>
-      <li><strong>智谱 AI (GLM)</strong>：提供食物图片识别和菜品推荐服务</li>
+      <li><strong>Supabase</strong>：仅提供用户注册和登录认证服务。<strong>您的菜谱、库存等业务数据不存储在 Supabase 服务器上</strong></li>
+      <li><strong>智谱 AI (GLM)</strong>：提供食物图片识别和菜品推荐服务。照片仅在识别时临时传输，不会被存储</li>
       <li><strong>阿里云短信服务</strong>：用于发送登录验证码</li>
+      <li><strong>Apple iCloud</strong>（iOS 用户）：如果您启用了 iCloud 备份，您的应用数据（包含照片和文字）会备份到您自己的 iCloud 账户。这由苹果系统控制，我们无法访问您的
+        iCloud 数据</li>
     </ul>
     <p>这些第三方服务提供商有各自的隐私政策，我们建议您查阅了解。</p>
 
     <h2>四、数据存储与安全</h2>
     <ul>
-      <li>您的数据存储在 Supabase 云服务器上，采用行级安全策略 (RLS) 保护</li>
-      <li>您的密码和敏感信息经过加密处理</li>
-      <li>我们采取合理的技术措施防止数据泄露、滥用或丢失</li>
-      <li>图片数据通过安全的 HTTPS 协议传输</li>
+      <li><strong>本地优先策略</strong>：为了最大程度保护您的隐私，您的所有业务数据（菜谱、库存、日志、照片）均<strong>存储在您的设备本地</strong></li>
+      <li><strong>数据备份</strong>：由于数据存储在本地，<strong>如果您删除了应用，数据将会丢失且无法恢复</strong>。强烈建议 iOS 用户开启 iCloud 整机备份以保护数据安全</li>
+      <li><strong>传输安全</strong>：在进行 AI 识别或登录认证时，数据通过安全的 HTTPS 协议传输</li>
+      <li><strong>敏感信息</strong>：您的登录密码等敏感凭证经过加密处理</li>
     </ul>
 
     <h2>五、您的权利</h2>
@@ -167,13 +186,14 @@
     <h2>八、联系我们</h2>
     <div class="contact-box">
       <p>如果您对本隐私政策有任何疑问或需要行使您的权利，请联系我们：</p>
-      <p><strong>北京知微探界科技有限公司</strong></p>
-      <p>邮箱：<a href="mailto:support@zwtj.site">support@zwtj.site</a></p>
+      <p><strong>北京知微探界科技</strong></p>
+      <p>邮箱：<a href="mailto:support@zhiweitan.com">support@zhiweitan.com</a></p>
     </div>
 
     <footer>
-      <p>&copy; 2025 北京知微探界科技有限公司. 保留所有权利。</p>
+      <p>&copy; 2025 北京知微探界科技. 保留所有权利。</p>
     </footer>
   </div>
 </body>
+
 </html>
